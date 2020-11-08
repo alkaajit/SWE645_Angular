@@ -16,7 +16,7 @@ export class StudentService {
   }
 
   public getStudent(id:string){
-    return this.http.get(backendUrl+"/"+id).pipe(catchError(this.handleError));
+    return this.http.get('http://ec2-3-236-215-25.compute-1.amazonaws.com:31750/SWE645_RestBackend/student/survey/'+id).pipe(catchError(this.handleError));
   }
 
   public postStudent(student:object){
