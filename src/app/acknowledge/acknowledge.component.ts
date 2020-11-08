@@ -25,15 +25,7 @@ export class AcknowledgeComponent implements OnInit {
   }
 
   gotoDetails(studentId: any) {
-    this.studentService.getStudent(studentId).subscribe((data: any[]) => {
-        console.log(data);
-        this.studentIds = data;
-      },
-        (error) => {                              //Error callback
-          console.error('error with backend call')
-          this.loadingFailure = true;
-        });
-    #this.router.navigateByUrl(studentId);
+    this.router.navigateByUrl(studentId);
   }
 
   ngOnInit(): void {
