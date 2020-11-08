@@ -3,7 +3,7 @@ import { HttpClient, HttpErrorResponse } from '@angular/common/http'
 import { Observable, throwError } from 'rxjs';
 import { catchError, retry } from 'rxjs/operators';
 
-const backendUrl = 'http://localhost:8080/HW4/student/survey';
+const backendUrl = 'http://localhost:18080/SWE645_RestBackend/student/survey';
 @Injectable({
   providedIn: 'root'
 })
