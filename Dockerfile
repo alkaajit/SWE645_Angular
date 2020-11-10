@@ -8,7 +8,7 @@ RUN npm run build
 ### STAGE 2: Run ###
 
 COPY . /usr/src/app
-COPY  ng serve --host 0.0.0.0 --disableHostCheck true
+COPY  npm start --host 0.0.0.0 --disableHostCheck true
 
 EXPOSE 8080
 EXPOSE 4200
